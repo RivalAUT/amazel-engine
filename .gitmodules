@@ -1,0 +1,3 @@
+[submodule "Amazel/vendor/spdlog"]
+	path = Amazel/vendor/spdlog
+	url = https://github.com/gabime/spdlog

@@ -6,7 +6,10 @@
 extern Amazel::Application* Amazel::CreateApplication();
 
 void main(int argc, char** argv) {
-	std::cout << "Amazel Engine" << std::endl;
+	Amazel::LOG::Init();
+	AZ_CORE_WARN("Engine starting!");
+	AZ_INFO("Hello!");
+
 	auto app = Amazel::CreateApplication();
 	app->Run();
 	delete app;

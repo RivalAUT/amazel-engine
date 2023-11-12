@@ -3,7 +3,7 @@
 // For use by Amazel applications
 
 #include "Amazel/Application.h"
-#include <iostream>
+#include "Amazel/LOG.h"
 
 /////////// EntryPoint ///////////
 #include "Amazel/EntryPoint.h"

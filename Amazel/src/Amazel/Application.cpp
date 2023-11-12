@@ -2,10 +2,8 @@
 
 namespace Amazel {
 	Application::Application() {
-
 	}
 	Application::~Application() {
-
 	}
 
 	void Application::Run() {
