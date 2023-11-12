@@ -32,4 +32,6 @@
 *.app
 
 .vs/
-
+bin-tmp/
+bin/
+*.user
