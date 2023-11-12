@@ -2,6 +2,7 @@
 .vs/
 bin-tmp/
 bin/
+!vendor/bin
 
 # Files
 *.user
