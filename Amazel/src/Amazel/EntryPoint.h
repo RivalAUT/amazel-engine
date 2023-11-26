@@ -5,14 +5,15 @@
 
 extern Amazel::Application* Amazel::CreateApplication();
 
-void main(int argc, char** argv) {
+int main(int argc, char** argv) {
 	Amazel::LOG::Init();
-	AZ_CORE_WARN("Engine starting!");
-	AZ_INFO("Hello!");
+	LOG_CORE_WARN("Engine starting!");
+	LOG_INFO("Hello!");
 
 	auto app = Amazel::CreateApplication();
 	app->Run();
 	delete app;
+	return 0;
 }
 
 #endif

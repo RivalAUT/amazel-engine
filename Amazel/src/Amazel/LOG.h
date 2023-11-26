@@ -3,6 +3,7 @@
 #include <memory>
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
 namespace Amazel {
@@ -21,15 +22,15 @@ namespace Amazel {
 }
 
 // Core log macros
-#define AZ_CORE_FATAL(...) ::Amazel::LOG::GetCoreLogger()->fatal(__VA_ARGS__)
-#define AZ_CORE_ERROR(...) ::Amazel::LOG::GetCoreLogger()->error(__VA_ARGS__)
-#define AZ_CORE_WARN(...) ::Amazel::LOG::GetCoreLogger()->warn(__VA_ARGS__)
-#define AZ_CORE_INFO(...) ::Amazel::LOG::GetCoreLogger()->info(__VA_ARGS__)
-#define AZ_CORE_TRACE(...) ::Amazel::LOG::GetCoreLogger()->trace(__VA_ARGS__)
+#define LOG_CORE_ERROR(...) ::Amazel::LOG::GetCoreLogger()->error(__VA_ARGS__)
+#define LOG_CORE_WARN(...) ::Amazel::LOG::GetCoreLogger()->warn(__VA_ARGS__)
+#define LOG_CORE_INFO(...) ::Amazel::LOG::GetCoreLogger()->info(__VA_ARGS__)
+#define LOG_CORE_DEBUG(...) ::Amazel::LOG::GetCoreLogger()->debug(__VA_ARGS__)
+#define LOG_CORE_TRACE(...) ::Amazel::LOG::GetCoreLogger()->trace(__VA_ARGS__)
 
 // Client log macros
-#define AZ_FATAL(...) ::Amazel::LOG::GetClientLogger()->fatal(__VA_ARGS__)
-#define AZ_ERROR(...) ::Amazel::LOG::GetClientLogger()->error(__VA_ARGS__)
-#define AZ_WARN(...) ::Amazel::LOG::GetClientLogger()->warn(__VA_ARGS__)
-#define AZ_INFO(...) ::Amazel::LOG::GetClientLogger()->info(__VA_ARGS__)
-#define AZ_TRACE(...) ::Amazel::LOG::GetClientLogger()->trace(__VA_ARGS__)
+#define LOG_ERROR(...) ::Amazel::LOG::GetClientLogger()->error(__VA_ARGS__)
+#define LOG_WARN(...) ::Amazel::LOG::GetClientLogger()->warn(__VA_ARGS__)
+#define LOG_INFO(...) ::Amazel::LOG::GetClientLogger()->info(__VA_ARGS__)
+#define LOG_DEBUG(...) ::Amazel::LOG::GetClientLogger()->debug(__VA_ARGS__)
+#define LOG_TRACE(...) ::Amazel::LOG::GetClientLogger()->trace(__VA_ARGS__)

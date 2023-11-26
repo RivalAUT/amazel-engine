@@ -4,6 +4,9 @@
     <Filter Include="Amazel">
       <UniqueIdentifier>{BF096AA7-ABAB-947D-9466-A8D180A71BCE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Amazel\Events">
+      <UniqueIdentifier>{C368394D-2F29-B583-F863-FE0064E3F95F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Amazel.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Amazel\EntryPoint.h">
       <Filter>Amazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amazel\Events\ApplicationEvent.h">
+      <Filter>Amazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amazel\Events\Event.h">
+      <Filter>Amazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amazel\Events\KeyEvent.h">
+      <Filter>Amazel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Amazel\Events\MouseEvent.h">
+      <Filter>Amazel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Amazel\LOG.h">
       <Filter>Amazel</Filter>
