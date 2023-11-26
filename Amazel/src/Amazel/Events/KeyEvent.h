@@ -3,8 +3,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Amazel {
 
 	class AMAZEL_API KeyEvent : public Event

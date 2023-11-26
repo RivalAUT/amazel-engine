@@ -19,6 +19,9 @@ project "Amazel"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-tmp/" .. outputdir .. "/%{prj.name}")
+	
+	pchheader "azpch.h"
+	pchsource "Amazel/src/azpch.cpp"
 
 	files
 	{

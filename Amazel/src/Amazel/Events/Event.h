@@ -1,9 +1,7 @@
 #pragma once
 
+#include "azpch.h"
 #include "Amazel/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Amazel {
 

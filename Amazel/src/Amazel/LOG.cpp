@@ -1,3 +1,4 @@
+#include "azpch.h"
 #include "LOG.h"
 
 namespace Amazel {

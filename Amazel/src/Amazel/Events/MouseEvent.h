@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Amazel {
 
 	class AMAZEL_API MouseMovedEvent : public Event

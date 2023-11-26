@@ -34,6 +34,7 @@
     <ClInclude Include="src\Amazel\LOG.h">
       <Filter>Amazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\azpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Amazel\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Amazel\LOG.cpp">
       <Filter>Amazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\azpch.cpp" />
   </ItemGroup>
 </Project>
