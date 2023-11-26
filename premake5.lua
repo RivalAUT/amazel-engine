@@ -12,6 +12,12 @@ workspace "Amazel"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Amazel/vendor/GLFW/include"
+
+include "Amazel/vendor/GLFW"
+
 project "Amazel"
 	location "Amazel"
 	kind "SharedLib"
@@ -32,7 +38,15 @@ project "Amazel"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{ 
+		"GLFW",
+		"opengl32.lib",
+		"dwmapi.lib"
 	}
 
 	filter "system:windows"
@@ -53,14 +67,17 @@ project "Amazel"
 
 	filter "configurations:Debug"
 		defines "AZ_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "AZ_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "AZ_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -100,12 +117,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "AZ_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "AZ_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "AZ_DIST"
+		buildoptions "/MD"
 		optimize "On"

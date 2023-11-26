@@ -1,3 +1,6 @@
 [submodule "Amazel/vendor/spdlog"]
 	path = Amazel/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Amazel/vendor/GLFW"]
+	path = Amazel/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
