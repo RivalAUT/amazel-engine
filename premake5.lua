@@ -117,15 +117,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "AZ_DEBUG"
-		buildoptions "/MDd"
+		buildoptions "/MTd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "AZ_RELEASE"
-		buildoptions "/MD"
+		buildoptions "/MT"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "AZ_DIST"
-		buildoptions "/MD"
+		buildoptions "/MT"
 		optimize "On"

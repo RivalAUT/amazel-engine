@@ -164,6 +164,7 @@
     <ClInclude Include="src\Amazel\Events\KeyEvent.h" />
     <ClInclude Include="src\Amazel\Events\MouseEvent.h" />
     <ClInclude Include="src\Amazel\LOG.h" />
+    <ClInclude Include="src\Amazel\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\azpch.h" />
   </ItemGroup>

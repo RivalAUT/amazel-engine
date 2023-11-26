@@ -40,6 +40,9 @@
     <ClInclude Include="src\Amazel\LOG.h">
       <Filter>Amazel</Filter>
     </ClInclude>
+    <ClInclude Include="src\Amazel\Window.h">
+      <Filter>Amazel</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
